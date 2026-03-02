@@ -1,0 +1,36 @@
+using System;
+
+namespace HelloWorld
+{
+    class Program
+    {
+        class Student
+        {
+            public string name = "Bob";
+
+            private int age = 20;
+
+            public int Age
+            {
+                get { return age; }
+                set { age = value; }
+            }
+
+            public string Group { get; set; } = "1";
+        }
+
+        static void Main()
+        {
+            Student student = new Student();
+            Console.WriteLine("имя: " + student.name);
+            Console.WriteLine("возраст: " + student.Age);
+            Console.WriteLine("группа: " + student.Group);
+
+            student.Age = 25;
+            student.Group = "2";
+
+            Console.WriteLine("второе имя: " + student.Age);
+            Console.WriteLine("вторая группа: " + student.Group);
+        }
+    }
+}
