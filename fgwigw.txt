@@ -22,15 +22,16 @@ namespace HelloWorld
         static void Main()
         {
             Student student = new Student();
-            Console.WriteLine("имя: " + student.name);
-            Console.WriteLine("возраст: " + student.Age);
-            Console.WriteLine("группа: " + student.Group);
+            Console.WriteLine("Имя: " + student.name);
+            Console.WriteLine("Возраст: " + student.Age);
+            Console.WriteLine("Группа: " + student.Group);
 
             student.Age = 25;
             student.Group = "2";
 
-            Console.WriteLine("второе имя: " + student.Age);
-            Console.WriteLine("вторая группа: " + student.Group);
+            Console.WriteLine("Возраст: " + student.Age);
+            Console.WriteLine("Группа: " + student.Group);
         }
     }
+
 }
